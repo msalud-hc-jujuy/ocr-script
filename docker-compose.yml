@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  ocr-app:
+    build: .
+    volumes: 
+      - ./source_files:/usr/src/app/source_files
+      - ./destination_files:/usr/src/app/destination_files
