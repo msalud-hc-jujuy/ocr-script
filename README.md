@@ -8,15 +8,20 @@ __In addition to the required Python version (3.6+), OCRmyPDF requires external 
 
 Opcionalmente, se añade un Dockerfile y docker-compose.yml, por lo que se agregan como requerimiento tener instalado docker y docker-compose.
 
-## Ejecución
+## Configuración y Ejecución
+
+Se requiere crear dos carpetas adicionales en la raiz del repositorio:
+
+- source_files: donde se deben almacenar los archivos fuente.
+_ destination_files: donde se almacenarán los archivos generados por el script.
+
+Para ejecutar el script, tenemos las siguientes alternativas:
 
 ```bash
 # python
-
 python main.py
 
 # docker
-
 docker build -t custom-ocr:v0.1 .
 docker run custom-ocr:v0.1 .
 
@@ -24,8 +29,6 @@ docker run custom-ocr:v0.1 .
 docker-compose build
 docker-compose up
 ```
-
-
 ## Documentación
 
 La documentación oficial de la libreria __ocrmypdf__ está disponible en el siguiente [link](https://ocrmypdf.readthedocs.io/en/latest/).
