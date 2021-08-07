@@ -13,7 +13,7 @@ Opcionalmente, se añade un Dockerfile y docker-compose.yml, por lo que se agreg
 Se requiere crear dos carpetas adicionales en la raiz del repositorio:
 
 - source_files: donde se deben almacenar los archivos fuente.
-_ destination_files: donde se almacenarán los archivos generados por el script.
+- destination_files: donde se almacenarán los archivos generados por el script.
 
 Para ejecutar el script, tenemos las siguientes alternativas:
 
