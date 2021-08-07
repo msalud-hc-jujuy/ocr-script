@@ -23,7 +23,7 @@ python main.py
 
 # docker
 docker build -t custom-ocr:v0.1 .
-docker run custom-ocr:v0.1 .
+docker run -v $PWD/source_files:/usr/src/app/source_files -v $PWD/destination_files:/usr/src/app/destination_files custom-ocr:v0.1
 
 # docker-compose
 docker-compose build
